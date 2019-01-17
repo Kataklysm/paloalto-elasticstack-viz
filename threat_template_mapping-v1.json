@@ -1,5 +1,5 @@
 {
-  "template" : "threat*",
+  "template" : "panos-threat-*",
   "version" : 1,
   "settings" : {
     "index.refresh_interval" : "5s"
@@ -717,5 +717,4 @@
         }
       }
     }
-  }
 }

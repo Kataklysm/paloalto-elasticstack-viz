@@ -1,8 +1,11 @@
 {
-  "template" : "traffic*",
+  "template" : "panos-traffic-*",
   "version" : 1,
   "settings" : {
-    "index.refresh_interval" : "5s"
+    "index.refresh_interval" : "5s",
+    "number_of_shards": "3",
+    "codec": "best_compression",
+    "number_of_replicas": "2"
   },
   "mappings" : {
     "_default_" : {
@@ -121,7 +124,7 @@
                 "type" : "text",
                 "fields" : {
                   "keyword" : {
-                    "type" : "short"
+                    "type" : "text"
                   }
                 }
               },
